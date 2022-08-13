@@ -1,5 +1,8 @@
 package com.jingdianjichi.user.service.impl;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.jingdianjichi.entity.PageResult;
 import com.jingdianjichi.user.entity.dto.UserDto;
 import com.jingdianjichi.user.entity.po.UserPo;
 import com.jingdianjichi.user.mapper.UserMapper;
@@ -26,6 +29,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public int delete(Integer id) {
         return userMapper.deleteById(id);
+    }
+
+    @Override
+    public PageResult<UserPo> getUserPage(UserDto userDto) {
+        IPage<UserPo> userPoPage = new Page<>(userDto.getPageIndex(),userDto.getPageSize());
+        IPage<UserPo> userPage = userMapper.getUserPage(userPoPage);
+        PageResult<UserPo> pageResult = new PageResult<>();
+        pageResult.loadData(userPage);
+        return pageResult;
     }
 
 }

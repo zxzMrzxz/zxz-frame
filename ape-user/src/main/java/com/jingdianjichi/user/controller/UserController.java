@@ -2,6 +2,7 @@ package com.jingdianjichi.user.controller;
 
 import com.jingdianjichi.bean.Result;
 import com.jingdianjichi.user.entity.dto.UserDto;
+import com.jingdianjichi.user.entity.req.UserListReq;
 import com.jingdianjichi.user.entity.req.UserReq;
 import com.jingdianjichi.user.service.UserService;
 import org.springframework.beans.BeanUtils;
@@ -23,8 +24,17 @@ public class UserController {
     }
 
     @DeleteMapping("/{id}")
-    public Result delete(@PathVariable Integer id){
+    public Result delete(@PathVariable Integer id) {
         return Result.ok(userService.delete(id));
     }
+
+    @GetMapping
+    public Result getPage(@RequestBody UserListReq userListReq) {
+        UserDto userDto = new UserDto();
+        System.out.println(userListReq.toString());
+        BeanUtils.copyProperties(userListReq, userDto);
+        return Result.ok(userService.getUserPage(userDto));
+    }
+
 
 }
