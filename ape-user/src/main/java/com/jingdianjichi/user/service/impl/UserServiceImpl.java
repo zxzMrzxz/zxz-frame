@@ -19,6 +19,7 @@ public class UserServiceImpl implements UserService {
         UserPo userPo = new UserPo();
         BeanUtils.copyProperties(userDto, userPo);
         int count = userMapper.insert(userPo);
+        int i = 1/0;
         return count;
     }
 

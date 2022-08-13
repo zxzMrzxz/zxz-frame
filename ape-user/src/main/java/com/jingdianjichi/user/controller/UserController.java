@@ -1,6 +1,6 @@
 package com.jingdianjichi.user.controller;
 
-import com.jingdianjichi.Result;
+import com.jingdianjichi.bean.Result;
 import com.jingdianjichi.user.entity.dto.UserDto;
 import com.jingdianjichi.user.entity.req.UserReq;
 import com.jingdianjichi.user.service.UserService;
