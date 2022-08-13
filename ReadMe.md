@@ -18,4 +18,9 @@ apipost（已经安装）
 4、集成mybatis plus
 5、集成druid监控
 6、集成mybatis的优化器
+## 从0到1做一个脚手架 day03   9点10分开始
+1、mybatis优化器的自动装载
+2、mybatis的实体优化
+3、全局异常捕获
+4、mybatisplus提供的拦截器集成
 
