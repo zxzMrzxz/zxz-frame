@@ -15,9 +15,9 @@ public class UserController {
     private UserService userService;
 
     @PostMapping
-    public Integer addUser(@RequestBody UserReq userReq){
+    public Integer addUser(@RequestBody UserReq userReq) {
         UserDto userDto = new UserDto();
-        BeanUtils.copyProperties(userReq,userDto);
+        BeanUtils.copyProperties(userReq, userDto);
         int i = userService.addUser(userDto);
         return i;
     }

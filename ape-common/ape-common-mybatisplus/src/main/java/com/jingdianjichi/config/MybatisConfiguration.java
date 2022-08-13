@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class MybatisConfiguration {
 
     @Bean
-    public SqlBeautyInterceptor sqlBeautyInterceptor(){
+    public SqlBeautyInterceptor sqlBeautyInterceptor() {
         return new SqlBeautyInterceptor();
     }
 
