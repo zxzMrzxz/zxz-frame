@@ -3,10 +3,9 @@ package com.jingdianjichi.user.service.impl;
 import com.jingdianjichi.bean.PageResponse;
 import com.jingdianjichi.user.convert.SysUserConverter;
 import com.jingdianjichi.user.entity.po.SysUser;
-import com.jingdianjichi.user.dao.SysUserDao;
+import com.jingdianjichi.user.mapper.SysUserDao;
 import com.jingdianjichi.user.entity.req.SysUserReq;
 import com.jingdianjichi.user.service.SysUserService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
