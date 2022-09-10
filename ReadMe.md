@@ -23,15 +23,21 @@ apipost
 2、mybatis的实体优化
 3、全局异常捕获
 4、mybatisplus提供的拦截器集成
+
+## 从0到1做一个脚手架 day04
+1、easycode插件使用
+2、提供一套完整的crud的流程
+3、封装一个无状态的page对象
+4、集成mapstruct
+5、集成一下swagger
+6、banner改一下
+
 ## 后续规划
-1、提供一套完整的crud的流程
 2、集成redis
 3、封装一个分布式锁
 4、分布式锁结合一个业务场景来讲
 5、注解的缓存方式
 6、封装一个cacheutil，函数式编程+泛型
-7、集成一下swagger
-8、banner改一下
 9、导入导出的，写一个例子，封一个工具类
 10、集成rabbitmq或者rocketmq
 11、mq的例子
@@ -42,7 +48,6 @@ apipost
 16、mysql的读写分离
 17、代码生成器
 18、集成xxljob
-19、集成mapstruct
 20、集成redission
 21、aop去实现一个数据加解密
 22、aop实现一个操作日志记录
