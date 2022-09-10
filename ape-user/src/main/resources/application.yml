@@ -33,6 +33,7 @@ mybatis-plus:
       logic-delete-field: delete_flag
       logic-delete-value: 1
       logic-not-delete-value: 0
+    banner: false
   mapper-locations: classpath:mapper/*.xml
 swagger:
   base-package: com.jingdianjichi
