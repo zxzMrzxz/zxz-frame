@@ -1,6 +1,7 @@
 package com.jingdianjichi.user.service.impl;
 
 import com.jingdianjichi.bean.PageResponse;
+import com.jingdianjichi.user.convert.SysUserConverter;
 import com.jingdianjichi.user.entity.po.SysUser;
 import com.jingdianjichi.user.dao.SysUserDao;
 import com.jingdianjichi.user.entity.req.SysUserReq;
@@ -40,8 +41,7 @@ public class SysUserServiceImpl implements SysUserService {
      */
     @Override
     public PageResponse<SysUser> queryByPage(SysUserReq sysUserReq) {
-        SysUser sysUser = new SysUser();
-        BeanUtils.copyProperties(sysUserReq,sysUser);
+        SysUser sysUser = SysUserConverter.INSTANCE.convertReqToSysUser(sysUserReq);
         PageResponse<SysUser> pageResponse = new PageResponse<>();
         pageResponse.setCurrent(sysUserReq.getPageNo());
         pageResponse.setPageSize(sysUserReq.getPageSize());
