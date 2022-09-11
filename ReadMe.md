@@ -30,10 +30,16 @@ apipost
 3、封装一个无状态的page对象
 4、集成mapstruct
 5、集成一下swagger
-6、banner改一下
+6、自定义banner
+
+## 从0到1做一个脚手架 day05
+1、安装redis
+2、集成redistemplate
+3、处理默认序列化乱码问题
+4、封装redisutil
+5、项目启动自动预热缓存
 
 ## 后续规划
-2、集成redis
 3、封装一个分布式锁
 4、分布式锁结合一个业务场景来讲
 5、注解的缓存方式
