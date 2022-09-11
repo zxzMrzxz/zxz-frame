@@ -24,6 +24,16 @@ spring:
           slow-sql-millis: 2000
         wall:
           enabled: true
+  redis:
+    host: 117.78.51.210
+    port: 6379
+    database: 0
+    lettuce:
+      pool:
+        max-active: 20
+        max-idle: 8
+        max-wait: -1
+        min-idle: 0
 sql:
   beauty:
     show: false

@@ -34,6 +34,14 @@ apipost
 
 ## 从0到1做一个脚手架 day05
 1、安装redis
+01、上传redis的安装包
+02、tar -xvf redis-5.0.7.tar.gz
+03、yum -y install gcc-c++
+04、make
+05、make PREFIX=/soft/redis install
+06、cd /soft/redis/bin
+07、./redis-server redis.conf
+
 2、集成redistemplate
 3、处理默认序列化乱码问题
 4、封装redisutil

@@ -14,6 +14,7 @@
         <module>ape-common/ape-common-web</module>
         <module>ape-common/ape-common-mybatisplus</module>
         <module>ape-common/ape-common-swagger</module>
+        <module>ape-common/ape-common-redis</module>
     </modules>
 
     <properties>
@@ -45,6 +46,11 @@
         <dependency>
             <groupId>com.jingdianjichi</groupId>
             <artifactId>ape-common-swagger</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jingdianjichi</groupId>
+            <artifactId>ape-common-redis</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
