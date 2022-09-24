@@ -7,6 +7,11 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @Author: ChickenWing
+ * @Description: Redis分布式锁
+ * @DateTime: 2022/9/24 22:28
+ */
 @Component
 public class RedisShareLockUtil {
 
