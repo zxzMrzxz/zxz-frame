@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
+import java.util.concurrent.TimeUnit;
+
 @Component
 public class RedisUtil {
 
@@ -12,6 +14,19 @@ public class RedisUtil {
 
     public void set(String key, String value) {
         redisTemplate.opsForValue().set(key, value);
+    }
+
+    public boolean setNx(String key, String value, Long time, TimeUnit timeUnit){
+        return redisTemplate.opsForValue().setIfAbsent(key,value,time,timeUnit);
+    }
+
+    public String get(String key){
+        String value = (String) redisTemplate.opsForValue().get(key);
+        return value;
+    }
+
+    public boolean del(String key){
+        return redisTemplate.delete(key);
     }
 
 }

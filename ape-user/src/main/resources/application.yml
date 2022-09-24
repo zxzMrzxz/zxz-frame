@@ -34,6 +34,7 @@ spring:
         max-idle: 8
         max-wait: -1
         min-idle: 0
+    password: jingdianjichi
 sql:
   beauty:
     show: false
