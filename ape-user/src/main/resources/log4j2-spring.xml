@@ -77,30 +77,30 @@
     <loggers>
 
         <!--过滤掉spring和mybatis的一些无用的DEBUG信息-->
-        <logger name="org.mybatis" level="info" additivity="false">
-            <AppenderRef ref="Console"/>
-        </logger>
+<!--        <logger name="org.mybatis" level="info" additivity="false">-->
+<!--            <AppenderRef ref="Console"/>-->
+<!--        </logger>-->
         <!--监控系统信息-->
         <!--若是additivity设为false，则子Logger只会在自己的appender里输出，而不会在父Logger的appender里输出。-->
-        <Logger name="org.springframework" level="info" additivity="false">
-            <AppenderRef ref="Console"/>
-        </Logger>
+<!--        <Logger name="org.springframework" level="info" additivity="false">-->
+<!--            <AppenderRef ref="Console"/>-->
+<!--        </Logger>-->
 
-        <AsyncLogger name="asyncLog" level="info" additivity="true">
-            <appender-ref ref="RollingFileInfo"/>
-        </AsyncLogger>
-
-        <AsyncRoot level="info" includeLocation="true">
-            <AppenderRef ref="RollingFileInfo" />
-        </AsyncRoot>
-
-<!--        <root level="info">-->
-<!--            <appender-ref ref="Console"/>-->
+<!--        <AsyncLogger name="asyncLog" level="info" additivity="true">-->
 <!--            <appender-ref ref="RollingFileInfo"/>-->
-<!--            <appender-ref ref="RollingFileWarn"/>-->
-<!--            <appender-ref ref="RollingFileError"/>-->
-<!--            <appender-ref ref="fileLog"/>-->
-<!--        </root>-->
+<!--        </AsyncLogger>-->
+
+<!--        <AsyncRoot level="info" includeLocation="true">-->
+<!--            <AppenderRef ref="RollingFileInfo" />-->
+<!--        </AsyncRoot>-->
+
+        <root level="info">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="RollingFileInfo"/>
+            <appender-ref ref="RollingFileWarn"/>
+            <appender-ref ref="RollingFileError"/>
+            <appender-ref ref="fileLog"/>
+        </root>
     </loggers>
 
 </configuration>
