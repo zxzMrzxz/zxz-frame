@@ -65,21 +65,22 @@ apipost
 5、快捷注释设置
 6、优化一下现有代码
 
+## 从0到1做一个脚手架 day07
+1、日志log4j集成，异步日志集成
+2、aop实现一个操作日志记录
+
 ## 后续规划
 6、封装一个cacheutil，函数式编程+泛型
 9、导入导出的，写一个例子，封一个工具类
 10、集成rabbitmq或者rocketmq
 11、mq的例子
-12、日志log4j集成，异步日志集成
 13、elk的使用 filebeat+logstash+kibana
 14、httpclient的优化
 15、shard-jdbc分表
 16、mysql的读写分离
-17、代码生成器
 18、集成xxljob
 20、集成redission
 21、aop去实现一个数据加解密
-22、aop实现一个操作日志记录
 23、幂等性案例
 24、乐观锁案例
 25、集成spring oauth
