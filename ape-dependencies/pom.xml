@@ -18,7 +18,7 @@
         <maven.compile.source>1.8</maven.compile.source>
         <maven.compile.target>1.8</maven.compile.target>
         <spring.boot.web.version>2.4.2</spring.boot.web.version>
-        <lombok.version>1.18.24</lombok.version>
+        <lombok.version>1.18.16</lombok.version>
         <swagger.ui.version>2.7.0</swagger.ui.version>
         <swagger.version>2.7.0</swagger.version>
         <spring.boot.autoconfigure.version>2.4.2</spring.boot.autoconfigure.version>
