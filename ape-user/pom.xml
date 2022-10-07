@@ -29,7 +29,7 @@
         <dependency>
             <groupId>com.jingdianjichi</groupId>
             <artifactId>ape-common-starter</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${ape.common.version}</version>
         </dependency>
         <dependency>
             <groupId>com.jingdianjichi</groupId>
@@ -52,27 +52,19 @@
             <version>${ape.common.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.jingdianjichi</groupId>
+            <artifactId>ape-common-log</artifactId>
+            <version>${ape.common.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
             <version>1.4.2.Final</version>
         </dependency>
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct-processor</artifactId>
             <version>1.4.2.Final</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-log4j2</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.lmax</groupId>
-            <artifactId>disruptor</artifactId>
-            <version>3.4.2</version>
         </dependency>
 
     </dependencies>
