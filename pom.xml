@@ -8,6 +8,7 @@
     <artifactId>ape-frame</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
+
     <modules>
         <module>ape-user</module>
         <module>ape-common</module>
@@ -15,6 +16,7 @@
         <module>ape-common/ape-common-mybatisplus</module>
         <module>ape-common/ape-common-swagger</module>
         <module>ape-common/ape-common-redis</module>
+        <module>ape-common/ape-common-starter</module>
         <module>ape-dependencies</module>
     </modules>
 

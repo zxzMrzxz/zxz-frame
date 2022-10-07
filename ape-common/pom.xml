@@ -7,7 +7,7 @@
         <artifactId>ape-dependencies</artifactId>
         <groupId>com.jingdianjichi</groupId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../ape-dependencies</relativePath>
+        <relativePath/>
     </parent>
 
     <groupId>com.jingdianjichi</groupId>
@@ -17,10 +17,41 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>ape-common-starter</module>
         <module>ape-common-web</module>
         <module>ape-common-mybatisplus</module>
         <module>ape-common-redis</module>
         <module>ape-common-swagger</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.jingdianjichi</groupId>
+                <artifactId>ape-common-starter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.jingdianjichi</groupId>
+                <artifactId>ape-common-mybatisplus</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.jingdianjichi</groupId>
+                <artifactId>ape-common-redis</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.jingdianjichi</groupId>
+                <artifactId>ape-common-swagger</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.jingdianjichi</groupId>
+                <artifactId>ape-common-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
