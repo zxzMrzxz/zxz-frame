@@ -6,6 +6,7 @@ import com.jingdianjichi.user.entity.po.SysUser;
 import com.jingdianjichi.user.dao.SysUserDao;
 import com.jingdianjichi.user.entity.req.SysUserReq;
 import com.jingdianjichi.user.service.SysUserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +20,7 @@ import java.util.List;
  * @since 2022-09-10 21:14:47
  */
 @Service("sysUserService")
+@Slf4j
 public class SysUserServiceImpl implements SysUserService {
     @Resource
     private SysUserDao sysUserDao;

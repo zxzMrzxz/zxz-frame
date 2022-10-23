@@ -1,8 +1,11 @@
 package com.jingdianjichi.bean;
 
+import lombok.Data;
+
 import java.util.Collections;
 import java.util.List;
 
+@Data
 public class PageResponse<T> {
 
     private Long pageNo = 1L;
