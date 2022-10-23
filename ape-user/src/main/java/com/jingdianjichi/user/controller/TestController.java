@@ -2,10 +2,14 @@ package com.jingdianjichi.user.controller;
 
 import com.jingdianjichi.redis.util.RedisShareLockUtil;
 import com.jingdianjichi.redis.util.RedisUtil;
+import com.jingdianjichi.tool.ExportWordUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @RestController
 @Slf4j
@@ -42,5 +46,14 @@ public class TestController {
         long endTime = System.currentTimeMillis();
         log.info("当前耗时：{}", endTime - startTime);
     }
+
+    @GetMapping("/testExport")
+    public void testExport() throws Exception {
+        Map<String, Object> dataMap = new HashMap<>();
+        dataMap.put("name", "经典鸡翅");
+        dataMap.put("auditName", "可乐鸡翅");
+        ExportWordUtil.exportWord(dataMap, "导出文件", "wordExport.ftl");
+    }
+
 
 }
