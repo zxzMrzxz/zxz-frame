@@ -56,7 +56,7 @@ public class SysUserController {
      */
     @PostMapping
     @ApiOperation(value = "新增用户",notes = "用户数据")
-    public Result<SysUser> add(SysUser sysUser) {
+    public Result<SysUser> add(@RequestBody SysUser sysUser) {
         return Result.ok(this.sysUserService.insert(sysUser));
     }
 
@@ -67,7 +67,7 @@ public class SysUserController {
      * @return 编辑结果
      */
     @PutMapping
-    public Result<SysUser> edit(SysUser sysUser) {
+    public Result<SysUser> edit(@RequestBody SysUser sysUser) {
         return Result.ok(this.sysUserService.update(sysUser));
     }
 
