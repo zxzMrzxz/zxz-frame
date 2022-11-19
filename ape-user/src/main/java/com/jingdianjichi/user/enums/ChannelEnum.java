@@ -3,7 +3,7 @@ package com.jingdianjichi.user.enums;
 /**
  * @Author: ChickenWing
  * @Description: 渠道枚举
- * @DateTime: 2022/11/19 19:58
+ * @DateTime: 2022/11/19 20:36
  */
 public enum ChannelEnum {
 
