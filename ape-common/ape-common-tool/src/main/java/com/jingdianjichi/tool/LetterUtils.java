@@ -1,5 +1,10 @@
 package com.jingdianjichi.tool;
 
+import org.apache.tomcat.util.buf.StringUtils;
+
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @Author: ChickenWing
  * @Description: 字母转换工具类
@@ -19,6 +24,14 @@ public class LetterUtils {
             number += num;
         }
         return number;
+    }
+
+    /**
+     * 字符串拼接
+     */
+    public static String assembleHandler(char splitChar, String... args) {
+        List<String> strList = Arrays.asList(args);
+        return StringUtils.join(strList, splitChar);
     }
 
 }
