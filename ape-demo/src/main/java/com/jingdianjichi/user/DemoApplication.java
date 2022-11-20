@@ -10,11 +10,11 @@ import org.springframework.context.annotation.ComponentScan;
 @MapperScan(value = "com.jingdianjichi.*.dao")
 @ComponentScan(value = "com.jingdianjichi")
 @EnableCaching
-public class UserApplication {
+public class DemoApplication {
 
     public static void main(String[] args) {
         System.setProperty("Log4jContextSelector", "org.apache.logging.log4j.core.async.AsyncLoggerContextSelector");
-        SpringApplication.run(UserApplication.class);
+        SpringApplication.run(DemoApplication.class);
     }
 
 }
