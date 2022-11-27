@@ -82,8 +82,8 @@ apipost
 5、工厂加策略工作实战
 
 ## 从0到1做一个脚手架 day10
-1、封装一个cacheutil，函数式编程+泛型
-
+1、封装一个cacheutil，函数式编程+泛型，基于guava
+2、websocket集成+扩展
 
 ## 后续规划
 
@@ -106,10 +106,6 @@ apipost
 29、手写一个分布式id 叶子算法
 30、远程debug
 31、单测案例
-32、websocket
-33、guava集成
-34、本地缓存，guava
-35、设计模式的案例
 36、skywalking
 
 
