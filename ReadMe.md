@@ -85,13 +85,18 @@ apipost
 1、封装一个cacheutil，函数式编程+泛型，基于guava
 2、websocket集成+扩展
 
-## 后续规划
+## 从0到1做一个脚手架 day11
+1、线上、预发、开发、测试环境的隔离
+2、springboot-maven插件打包部署
+3、httpclient的优化
+4、构造者模式实战
+5、过滤器模式实战
 
+## 后续规划
 9、导入导出的，写一个例子，封一个工具类
 10、集成rabbitmq或者rocketmq
 11、mq的例子
 13、elk的使用 filebeat+logstash+kibana
-14、httpclient的优化
 15、shard-jdbc分表
 16、mysql的读写分离
 18、集成xxljob
