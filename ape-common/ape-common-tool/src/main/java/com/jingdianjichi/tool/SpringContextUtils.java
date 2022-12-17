@@ -11,6 +11,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.Map;
 
 @Component
 public class SpringContextUtils implements ApplicationContextAware {
@@ -55,6 +56,10 @@ public class SpringContextUtils implements ApplicationContextAware {
 
     public static Class getType(String name)    throws NoSuchBeanDefinitionException {
         return applicationContext.getType(name);
+    }
+
+    public static <T> Map<String, T> getBeanOfType(Class<T> clazz)    throws NoSuchBeanDefinitionException {
+        return applicationContext.getBeansOfType(clazz);
     }
 
     public static String[] getAliases(String name) throws NoSuchBeanDefinitionException {
