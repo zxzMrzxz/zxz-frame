@@ -92,6 +92,12 @@ apipost
 4、构造者模式实战
 5、过滤器模式实战
 
+## 从0到1做一个脚手架 day12
+1、集成springboottest
+2、服务预热
+3、contoller的时间格式转化器
+4、xxljob集成
+
 ## 后续规划
 9、导入导出的，写一个例子，封一个工具类
 10、集成rabbitmq或者rocketmq
@@ -99,7 +105,6 @@ apipost
 13、elk的使用 filebeat+logstash+kibana
 15、shard-jdbc分表
 16、mysql的读写分离
-18、集成xxljob
 20、集成redission
 21、aop去实现一个数据加解密
 23、幂等性案例
@@ -110,7 +115,6 @@ apipost
 28、threadlocal怎么用
 29、手写一个分布式id 叶子算法
 30、远程debug
-31、单测案例
 36、skywalking
 
 
