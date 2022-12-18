@@ -44,6 +44,7 @@
         <http.client.version>5.0.3</http.client.version>
         <spring.boot.test.version>2.4.2</spring.boot.test.version>
         <junit.version>4.13.1</junit.version>
+        <xxl.job.version>2.4.0-SNAPSHOT</xxl.job.version>
     </properties>
 
     <dependencies>
@@ -228,6 +229,12 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
+            </dependency>
+            <!-- xxljob -->
+            <dependency>
+                <groupId>com.xuxueli</groupId>
+                <artifactId>xxl-job-core</artifactId>
+                <version>${xxl.job.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

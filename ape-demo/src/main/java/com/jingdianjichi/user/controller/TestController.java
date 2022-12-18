@@ -3,9 +3,12 @@ package com.jingdianjichi.user.controller;
 import com.jingdianjichi.redis.util.RedisShareLockUtil;
 import com.jingdianjichi.redis.util.RedisUtil;
 import com.jingdianjichi.tool.ExportWordUtil;
+import com.jingdianjichi.user.entity.po.SysUser;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -53,6 +56,12 @@ public class TestController {
         dataMap.put("name", "经典鸡翅");
         dataMap.put("auditName", "可乐鸡翅");
         ExportWordUtil.exportWord(dataMap, "导出文件", "wordExport.ftl");
+    }
+
+    @PostMapping("/testQuery")
+    public void testQuery(@RequestBody SysUser sysUser) throws Exception {
+        //2022-12-18 21:49:00
+        System.out.println(sysUser);
     }
 
 
