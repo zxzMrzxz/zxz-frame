@@ -44,6 +44,7 @@
         <http.client.version>5.0.3</http.client.version>
         <spring.boot.test.version>2.4.2</spring.boot.test.version>
         <junit.version>4.13.1</junit.version>
+        <commons.lang3.version>3.8</commons.lang3.version>
         <xxl.job.version>2.4.0-SNAPSHOT</xxl.job.version>
     </properties>
 
@@ -147,6 +148,12 @@
                 <artifactId>commons-lang</artifactId>
                 <version>${commons.lang.version}</version>
             </dependency>
+            <!-- commons-lang3 -->
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons.lang3.version}</version>
+            </dependency>
             <!-- lombok -->
             <dependency>
                 <groupId>org.projectlombok</groupId>
@@ -218,7 +225,7 @@
                 <artifactId>httpclient5</artifactId>
                 <version>${http.client.version}</version>
             </dependency>
-            <!-- springBooTest -->
+            <!-- springBootTest -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
