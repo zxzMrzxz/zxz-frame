@@ -1,4 +1,4 @@
-<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">Ape Frame v1.0.0</h1>
+<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">Ape Frame</h1>
 <h4 align="center">基于SpringBoot开发的轻量级框架</h4>
 <p align="center">
 <a href='https://gitee.com/classicChickenWings/ape-frame/stargazers'>
