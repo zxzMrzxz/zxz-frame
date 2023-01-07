@@ -12,71 +12,99 @@
 </a>
 </p>
 
-## 从0到1做一个脚手架 day01
+## 项目简介
+ape-frame，ape是“猿”的意思，正好符合我们程序猿的称号！我希望未来这个框架是专属于我们程序猿的首选开发框架。
 
-开局只有一个idea。和一台华为云服务器，没准备即兴搞，看我会不会翻车呢！ 1、环境准备 git maven apipost 2、我们为什么要做脚手架
-首先我们平时在公司都是写业务代码，小公司crud。公司的leader，架构设计好的。你去怎么想，怎么做，这就是脚手架的意义。 3、建立git仓库 4、设置阿里镜像 5、集成springboot 6、集成springmvc
-7、linux下安装mysql
+一直想做一款适用于中小企业的轻量级快速开发框架，涵盖平时业务开发的常用场景，做到开箱即用。用户可根据自身情况选择组件来进行使用。采取组件化开发模式。
 
-## 从0到1做一个脚手架 day02
+比如用户需要redis，则选择redis组件，需要websocket，则引入websocket组件，用户自身不需要再开发什么，只需要按照组件规则进行使用即可。
 
-1、服务模块拆解 2、lombok作用演示 3、集成数据库连接池 4、集成mybatis plus 5、集成druid监控 6、集成mybatis的优化器
+同时，有些经典的工具以及经典的设计模式代码，提供了大量实例参考，用户的业务场景一旦用到，就可以直接使用。
 
-## 从0到1做一个脚手架 day03
+项目整体采用maven结构开发，封装了大量的模块，彼此解耦。满足用户日常开发需要。
 
-1、mybatis优化器的自动装载 2、mybatis的实体优化 3、全局异常捕获 4、mybatisplus提供的拦截器集成
+## 内置项目模块
+### ape-common
+* ape-common-job：分布式任务调度组件
+* ape-common-log：日志组件，提供日志切面自动记录及异步日志提升性能
+* ape-common-mybatisplus：采用Mybatisplus作为与数据库交互
+* ape-common-redis：缓存组件，提供基于redis的操作封装，redis分布式锁，guava的cache工具类
+* ape-common-starter：启动类组件，与启动类相关的功能，放到此组件处
+* ape-common-swagger：swagger组件，提供整体项目访问api的入口及方法文档
+* ape-common-test：测试组件，集成springboot-test，及代码单元测试，代码覆盖率，行覆盖率检测
+* ape-common-tool：常用的工具类组件，满足业务日常开发的各种需要，保障安全性，低入侵性
+* ape-common-web：web组件，提供统一异常处理，web模块转换，统一返回值
+* ape-common-websocket：websocket组件，提供一套带鉴权的websocket，引入即用，简单方便
+### ape-demo
+demo里提供了大量的实例，教大家如何直接使用这个项目框架，大家在开发中，可以直接参考这个模块来建立自己的项目进行使用。
+目前已经提供的示例功能
+* redis缓存使用
+* 基于guava的本地二级缓存封装
+* 分布式锁封装
+* 完整的一套crud流程
+* mapstruct的使用方式
+* 各种lambda常用表达式的用法
+* 设计模式的实际案例，工厂、建造者、策略、模板等
+* 项目启动预热，可预热缓存，单例对象，线程池等
+* 分布式任务的job的编写
+* websocket的使用
+* 线上，预发，测试等开发环境隔离
+* linux下打包部署
+* freemarker导出复杂word表单
+* 自定义banner
+### ape-dependencies
+该模块为一个父pom模块，提供项目整体的maven包的锁定及规范，统一升级，统一引入。
 
-## 从0到1做一个脚手架 day04
+## 内置功能
+* 做脚手架的意义
+* linux下安装mysql
+* 如何涉及一个项目模块，如何拆分
+* lombok演示及集成
+* 集成druid连接池及数据库连接监控
+* 集成Mybatisplus的优化器及拦截器
+* 统一数据库基础实体封装
+* 集成swagger，并自定义信息
+* easycode自动生成代码
+* 自定义banner
+* linux下安装redis
+* redistemplate集成
+* 封装redisutil
+* 项目启动自预热缓存
+* 手动封装一个分布式锁
+* 注解缓存集成
+* log4j集成
+* 基于disruptor的异步日志
+* freemarker实现复杂表单导出
+* 设计模式实战demo，模板模式，工厂模式，策略模式，构造者模式，过滤器模式
+* websocket集成+鉴权
+* 线上、预发、开发、测试环境的隔离
+* springboot-maven插件打包部署
+* httpclient的优化
+* 集成springboottest
+* 服务预热
+* 分布式任务调度xxljob集成
 
-1、easycode插件使用 2、提供一套完整的crud的流程 3、封装一个无状态的page对象 4、集成mapstruct 5、集成一下swagger 6、自定义banner
+## 后续计划
+* 百万级数据导入导出的 
+* 集成rabbitmq或者rocketmq
+* 构建elk日志管理 filebeat+logstash+kibana
+* shard-jdbc分表
+* mysql的读写分离
+* 多数据源切换 
+* 集成redission 
+* 集成spring oauth
+* 基于redis的延时任务实现方式 
+* threadlocal传递traceId
+* 分布式id基于美团leaf思想
 
-## 从0到1做一个脚手架 day05
+## 问题反馈
+欢迎大家提issue一起完善，以及提供各种宝贵建议，持续做成商业化开发框架。
+可添加微信进行交流
+<a href="https://gitee.com/classicChickenWings/ape-frame">
+<img src="https://img.shields.io/badge/微信-jingdianjichi-brightgreen.svg">
+</a>
 
-1、安装redis 01、上传redis的安装包 02、tar -xvf redis-5.0.7.tar.gz 03、yum -y install gcc-c++ 04、make 05、make PREFIX=/soft/redis
-install 06、cd /soft/redis/bin 07、./redis-server redis.conf
-
-2、集成redistemplate 3、处理默认序列化乱码问题 4、封装redisutil 5、项目启动自动预热缓存
-
-## 从0到1做一个脚手架 day06
-
-1、复盘一下上周服务器中木马问题 一、集成redis，配置conf文件的时候，我们的bind 0.0.0.0 port 6379 requirepass 二、收到华为云的通知，服务器冻结。产生的现象，全部连接不上
-三、我的服务器每秒的连接，7w多个。scan，流量超大 四、重装服务器 五、redis设置密码
-
-2、封装一个分布式锁 3、分布式锁结合一个业务场景来讲 01、任务调度，集群系统 02、算钱，操作同一数据 money 100 120 120 100 总结：操作同一数据
-
-4、注解缓存的方式 5、快捷注释设置 6、优化一下现有代码
-
-## 从0到1做一个脚手架 day07
-
-1、日志log4j集成，异步日志集成 2、项目架构整体修改
-
-## 从0到1做一个脚手架 day08
-
-1、aop实现一个操作日志记录 2、freemaker实现自定义word格式文件导出 3、工具类模块抽取
-
-## 从0到1做一个脚手架 day09
-
-1、模板模式讲解 2、工厂模式讲解 3、抽象工厂模式讲解 4、策略模式讲解 5、工厂加策略工作实战
-
-## 从0到1做一个脚手架 day10
-
-1、封装一个cacheutil，函数式编程+泛型，基于guava 2、websocket集成+扩展
-
-## 从0到1做一个脚手架 day11
-
-1、线上、预发、开发、测试环境的隔离 2、springboot-maven插件打包部署 3、httpclient的优化 4、构造者模式实战 5、过滤器模式实战
-
-## 从0到1做一个脚手架 day12
-
-1、集成springboottest 2、服务预热 3、contoller的时间格式转化器 4、xxljob集成
-
-## 后续规划
-
-9、导入导出的，写一个例子，封一个工具类 10、集成rabbitmq或者rocketmq 11、mq的例子 13、elk的使用 filebeat+logstash+kibana 15、shard-jdbc分表 16、mysql的读写分离
-20、集成redission 21、aop去实现一个数据加解密 23、幂等性案例 24、乐观锁案例 25、集成spring oauth 26、多数据源集成 27、延时任务实现方式 28、threadlocal怎么用 29、手写一个分布式id
-叶子算法 30、远程debug 36、skywalking
-
-微服务版(待规划)
-1、分布式事务 2、alibaba 3、traceid的链路追踪
-
-领域驱动版
+## 知识星球
+<p>
+<img src="https://gitee.com/classicChickenWings/contact-information/raw/master/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83%E4%BC%98%E6%83%A0%E5%88%B8.jpg">
+</p>
