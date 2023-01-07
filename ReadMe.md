@@ -100,9 +100,9 @@ demo里提供了大量的实例，教大家如何直接使用这个项目框架�
 ## 问题反馈
 欢迎大家提issue一起完善，以及提供各种宝贵建议，持续做成商业化开发框架。
 可添加微信进行交流
-<a href="https://gitee.com/classicChickenWings/ape-frame">
-<img src="https://img.shields.io/badge/微信-jingdianjichi-brightgreen.svg">
-</a>
+<p>
+<img src="https://gitee.com/classicChickenWings/contact-information/raw/master/%E8%81%94%E7%B3%BB%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg">
+</p>
 
 ## 知识星球
 <p>
