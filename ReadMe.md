@@ -101,10 +101,10 @@ demo里提供了大量的实例，教大家如何直接使用这个项目框架�
 欢迎大家提issue一起完善，以及提供各种宝贵建议，持续做成商业化开发框架。
 可添加微信进行交流
 <p>
-<img height="500px" src="https://gitee.com/classicChickenWings/contact-information/raw/master/%E8%81%94%E7%B3%BB%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg">
+<img height="500px" src="https://s3.bmp.ovh/imgs/2023/01/08/1c97491276151891.jpg">
 </p>
 
 ## 知识星球
 <p>
-<img height="500px" src="https://gitee.com/classicChickenWings/contact-information/raw/master/%E7%9F%A5%E8%AF%86%E6%98%9F%E7%90%83%E4%BC%98%E6%83%A0%E5%88%B8.jpg">
+<img height="500px" src="https://s3.bmp.ovh/imgs/2023/01/08/bf031b68f8a91c66.jpg">
 </p>
