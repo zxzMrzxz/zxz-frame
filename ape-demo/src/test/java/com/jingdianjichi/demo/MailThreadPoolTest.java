@@ -1,5 +1,6 @@
 package com.jingdianjichi.demo;
 
+import com.jingdianjichi.tool.CompletableFutureUtils;
 import com.jingdianjichi.user.DemoApplication;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
@@ -8,7 +9,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.concurrent.FutureTask;
 import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @Author: ChickenWing
@@ -33,6 +39,29 @@ public class MailThreadPoolTest {
                 }
             });
         }
+    }
+
+    @Test
+    public void testFuture() {
+        List<FutureTask<String>> futureTaskList = new LinkedList<>();
+        FutureTask futureTask1 = new FutureTask<String>(() -> {
+            return "鸡翅";
+        });
+        FutureTask futureTask2 = new FutureTask<String>(() -> {
+            Thread.sleep(2000);
+            return "经典";
+        });
+        futureTaskList.add(futureTask1);
+        futureTaskList.add(futureTask2);
+        mailThreadPool.submit(futureTask1);
+        mailThreadPool.submit(futureTask2);
+
+        for (int i = 0; i < futureTaskList.size(); i++) {
+            String name = CompletableFutureUtils.getResult(futureTaskList.get(i),
+                    1, TimeUnit.SECONDS, "经典鸡翅", log);
+            log.info("MailThreadPoolTest.name:{}",name);
+        }
+
     }
 
 }
