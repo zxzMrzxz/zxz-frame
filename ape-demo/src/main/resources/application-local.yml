@@ -65,7 +65,7 @@ guava:
 xxl:
   job:
     admin:
-      addresses: http://127.0.0.1:9000/xxl-job-admin
+      addresses: http://117.78.51.210:9000/xxl-job-admin
     accessToken: default_token
     executor:
       appname: ape-frame
