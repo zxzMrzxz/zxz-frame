@@ -1,4 +1,4 @@
-package com.jingdianjichi.user.demo;
+package com.jingdianjichi.user.lambda;
 
 import lombok.Data;
 
