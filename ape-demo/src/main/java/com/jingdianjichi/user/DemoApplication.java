@@ -6,6 +6,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.ComponentScan;
 
+/**
+ * demo项目启动类
+ *
+ * @author: ChickenWing
+ * @date: 2023/1/26
+ */
 @SpringBootApplication
 @MapperScan(value = "com.jingdianjichi.*.dao")
 @ComponentScan(value = "com.jingdianjichi")
