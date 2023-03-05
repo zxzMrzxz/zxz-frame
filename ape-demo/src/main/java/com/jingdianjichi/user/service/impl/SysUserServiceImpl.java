@@ -70,11 +70,6 @@ public class SysUserServiceImpl implements SysUserService {
         return sysUser;
     }
 
-    @Override
-    public int batchInsert(List<SysUser> sysUserList) {
-        return this.sysUserDao.insertBatch(sysUserList);
-    }
-
     /**
      * 修改数据
      *

@@ -47,6 +47,7 @@
         <commons.lang3.version>3.8</commons.lang3.version>
         <xxl.job.version>2.3.1</xxl.job.version>
         <easyexcel.version>3.1.1</easyexcel.version>
+        <poi.version>3.17</poi.version>
     </properties>
 
     <dependencies>
@@ -244,10 +245,22 @@
                 <artifactId>xxl-job-core</artifactId>
                 <version>${xxl.job.version}</version>
             </dependency>
+            <!-- easyexcel -->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>easyexcel</artifactId>
                 <version>${easyexcel.version}</version>
+            </dependency>
+            <!-- poi -->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${poi.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

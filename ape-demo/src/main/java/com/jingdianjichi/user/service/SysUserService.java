@@ -39,12 +39,6 @@ public interface SysUserService {
     SysUser insert(SysUser sysUser);
 
     /**
-     * 新增数据
-     *
-     */
-    int batchInsert(List<SysUser> sysUserList);
-
-    /**
      * 修改数据
      *
      * @param sysUser 实例对象
