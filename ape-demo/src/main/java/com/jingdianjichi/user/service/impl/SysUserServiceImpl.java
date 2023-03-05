@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.Map;
 
 /**
  * (SysUser)表服务实现类
@@ -69,6 +70,11 @@ public class SysUserServiceImpl implements SysUserService {
         return sysUser;
     }
 
+    @Override
+    public int batchInsert(List<SysUser> sysUserList) {
+        return this.sysUserDao.insertBatch(sysUserList);
+    }
+
     /**
      * 修改数据
      *
@@ -90,5 +96,18 @@ public class SysUserServiceImpl implements SysUserService {
     @Override
     public boolean deleteById(Long id) {
         return this.sysUserDao.deleteById(id) > 0;
+    }
+
+    @Override
+    public List<SysUser> queryByExport(Map<String, Object> conditions) {
+        SysUser sysUser = new SysUser();
+        sysUser.setId(Long.valueOf(conditions.get("id").toString()));
+        return sysUserDao.queryAll(sysUser);
+    }
+
+    @Override
+    public Long queryCount(Map<String, Object> conditions) {
+        SysUser sysUser = new SysUser();
+        return sysUserDao.count(sysUser);
     }
 }

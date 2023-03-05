@@ -29,6 +29,15 @@ public interface SysUserDao {
     List<SysUser> queryAllByLimit(@Param("po") SysUser sysUser, @Param("pageStart") Long pageStart,@Param("pageSize") Long pageSize);
 
     /**
+     * 查询指定行数据
+     *
+     * @param sysUser 查询条件
+     * @return 对象列表
+     */
+    List<SysUser> queryAll(@Param("po") SysUser sysUser);
+
+
+    /**
      * 统计总行数
      *
      * @param sysUser 查询条件

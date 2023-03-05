@@ -10,6 +10,10 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * (SysUser)表控制层
@@ -47,6 +51,7 @@ public class SysUserController {
     public Result<SysUser> queryById(@PathVariable("id") Long id) {
         return Result.ok(this.sysUserService.queryById(id));
     }
+
 
     /**
      * 新增数据

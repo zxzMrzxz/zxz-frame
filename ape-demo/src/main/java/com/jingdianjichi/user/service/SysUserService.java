@@ -4,6 +4,9 @@ import com.jingdianjichi.bean.PageResponse;
 import com.jingdianjichi.user.entity.po.SysUser;
 import com.jingdianjichi.user.entity.req.SysUserReq;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * (SysUser)表服务接口
  *
@@ -36,6 +39,12 @@ public interface SysUserService {
     SysUser insert(SysUser sysUser);
 
     /**
+     * 新增数据
+     *
+     */
+    int batchInsert(List<SysUser> sysUserList);
+
+    /**
      * 修改数据
      *
      * @param sysUser 实例对象
@@ -51,4 +60,7 @@ public interface SysUserService {
      */
     boolean deleteById(Long id);
 
+    List<SysUser> queryByExport(Map<String, Object> conditions);
+
+    Long queryCount(Map<String, Object> conditions);
 }

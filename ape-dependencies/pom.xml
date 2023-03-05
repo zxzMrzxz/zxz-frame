@@ -46,6 +46,7 @@
         <junit.version>4.13.1</junit.version>
         <commons.lang3.version>3.8</commons.lang3.version>
         <xxl.job.version>2.3.1</xxl.job.version>
+        <easyexcel.version>3.1.1</easyexcel.version>
     </properties>
 
     <dependencies>
@@ -242,6 +243,11 @@
                 <groupId>com.xuxueli</groupId>
                 <artifactId>xxl-job-core</artifactId>
                 <version>${xxl.job.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>easyexcel</artifactId>
+                <version>${easyexcel.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
