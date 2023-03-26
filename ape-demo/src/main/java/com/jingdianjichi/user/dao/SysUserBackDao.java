@@ -2,6 +2,7 @@ package com.jingdianjichi.user.dao;
 
 import com.jingdianjichi.user.entity.po.SysUser;
 import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 /**
@@ -10,7 +11,7 @@ import java.util.List;
  * @author makejava
  * @since 2022-09-10 21:14:34
  */
-public interface SysUserDao {
+public interface SysUserBackDao {
 
     /**
      * 通过ID查询单条数据
@@ -85,8 +86,6 @@ public interface SysUserDao {
      * @return 影响行数
      */
     int deleteById(Long id);
-
-    int batchDelete(List<Long> ids);
 
 }
 
