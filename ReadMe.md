@@ -106,5 +106,5 @@ demo里提供了大量的实例，教大家如何直接使用这个项目框架�
 
 ## 知识星球
 <p>
-<img height="500px" src="https://s3.bmp.ovh/imgs/2023/01/08/bf031b68f8a91c66.jpg">
+<img height="500px" src="https://s1.ax1x.com/2023/03/29/ppcuQij.png">
 </p>
