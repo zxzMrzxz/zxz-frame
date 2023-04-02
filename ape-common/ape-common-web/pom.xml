@@ -34,6 +34,14 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.jingdianjichi</groupId>
+            <artifactId>ape-common-tool</artifactId>
+        </dependency>
 
     </dependencies>
 

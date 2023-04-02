@@ -1,5 +1,6 @@
 package com.jingdianjichi.user.controller;
 
+import com.jingdianjichi.annoation.ResultEncrypt;
 import com.jingdianjichi.bean.PageResponse;
 import com.jingdianjichi.bean.Result;
 import com.jingdianjichi.user.entity.po.SysUser;
@@ -44,6 +45,7 @@ public class SysUserController {
      * @return 单条数据
      */
     @GetMapping("{id}")
+    @ResultEncrypt("$.name")
     public Result<SysUser> queryById(@PathVariable("id") Long id) {
         return Result.ok(this.sysUserService.queryById(id));
     }
