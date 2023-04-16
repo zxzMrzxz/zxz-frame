@@ -1,0 +1,7 @@
+server:
+  port: 8082
+spring:
+  profiles:
+    active: ${env-flag}
+  application:
+    name: ape-cloud-sku

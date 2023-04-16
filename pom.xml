@@ -13,6 +13,8 @@
         <module>ape-demo</module>
         <module>ape-common</module>
         <module>ape-dependencies</module>
+        <module>ape-cloud-home</module>
+        <module>ape-cloud-sku</module>
     </modules>
 
 </project>
