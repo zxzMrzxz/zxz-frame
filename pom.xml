@@ -15,6 +15,7 @@
         <module>ape-dependencies</module>
         <module>ape-cloud-home</module>
         <module>ape-cloud-sku</module>
+        <module>ape-cloud</module>
     </modules>
 
 </project>
