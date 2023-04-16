@@ -5,3 +5,9 @@ spring:
     active: ${env-flag}
   application:
     name: ape-cloud-sku
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka

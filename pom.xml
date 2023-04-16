@@ -16,6 +16,7 @@
         <module>ape-cloud-home</module>
         <module>ape-cloud-sku</module>
         <module>ape-cloud</module>
+        <module>ape-cloud-eureka-server</module>
     </modules>
 
 </project>

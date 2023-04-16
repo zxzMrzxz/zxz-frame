@@ -14,7 +14,7 @@ public class HomeController {
     @Resource
     private RestTemplate restTemplate;
 
-    private static final String GET_SKU_INFO_URL = "http://localhost:8082/test";
+    private static final String GET_SKU_INFO_URL = "http://APE-CLOUD-SKU/test";
 
     @GetMapping("/test")
     public String test() {
