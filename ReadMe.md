@@ -12,7 +12,7 @@
 </a>
 </p>
 
-## 项目简介
+## ✨项目简介
 ape-frame，ape是“猿”的意思，正好符合我们程序猿的称号！我希望未来这个框架是专属于我们程序猿的首选开发框架。
 
 一直想做一款适用于中小企业的轻量级快速开发框架，涵盖平时业务开发的常用场景，做到开箱即用。用户可根据自身情况选择组件来进行使用。采取组件化开发模式。
@@ -23,13 +23,15 @@ ape-frame，ape是“猿”的意思，正好符合我们程序猿的称号！�
 
 项目整体采用maven结构开发，封装了大量的模块，彼此解耦。满足用户日常开发需要。
 
-## 视频学习
-小伙伴们想学习视频从0到1的课程的话，可以翻到最下面的星球码，视频资源在里面，同时星球提供答疑解惑服务，各种面试题，系统设计实战干货等等。具体可以扫码看介绍，加入后可进入vip社群。
-<p>
-<img height="500px" src="https://s1.ax1x.com/2023/03/29/ppcuQij.png">
-</p>
+希望大家可以帮忙点点Star，您的Star就是对我最大的支持。
 
-## 内置项目模块
+## 🔥内置项目模块
+### ape-cloud
+微服务模块更新中，目前具备以下模块
+* ape-cloud-eureka：eureka服务注册组件
+* ape-cloud-eureka-server：eureka服务端用于服务治理与服务发现
+* ape-cloud-home：用于微服务调用案例的首页微服务
+* ape-cloud-sku：用于微服务调用案例的sku微服务
 ### ape-common
 * ape-common-job：分布式任务调度组件
 * ape-common-log：日志组件，提供日志切面自动记录及异步日志提升性能
@@ -63,7 +65,7 @@ demo里提供了大量的实例，教大家如何直接使用这个项目框架�
 ### ape-dependencies
 该模块为一个父pom模块，提供项目整体的maven包的锁定及规范，统一升级，统一引入。
 
-## 内置功能
+## 💡内置功能
 * 做脚手架的意义
 * linux下安装mysql
 * 如何涉及一个项目模块，如何拆分
@@ -92,25 +94,29 @@ demo里提供了大量的实例，教大家如何直接使用这个项目框架�
 * 服务预热
 * 分布式任务调度xxljob集成
 
-## 后续计划
-* 百万级数据导入导出的 
-* 集成rabbitmq或者rocketmq
-* 构建elk日志管理 filebeat+logstash+kibana
-* shard-jdbc分表
-* mysql的读写分离
-* 多数据源切换 
-* 集成redission 
-* 集成spring oauth
-* 分布式id基于美团leaf思想
-
-## 问题反馈
+## ☀️添砖加瓦
 欢迎大家提issue一起完善，以及提供各种宝贵建议，持续做成商业化开发框架。
-可添加微信进行交流
-<p>
-<img height="500px" src="https://s3.bmp.ovh/imgs/2023/01/08/1c97491276151891.jpg">
-</p>
+如果您感觉我们的代码有需要优化的地方或者有更好的方案欢迎随时提pr。
+可添加微信进行交流，也可以直接加入粉丝群。
 
-## 知识星球
+如果您想看完整的教学视频，可以加入粉丝群了解学习。
+<div>
+<div style="display: inline-block">
 <p>
-<img height="500px" src="https://s1.ax1x.com/2023/03/29/ppcuQij.png">
+<img height="300px" src="https://s3.bmp.ovh/imgs/2023/01/08/1c97491276151891.jpg">
 </p>
+</div>
+<div style="display: inline-block">
+<p>
+<img height="300px" src="https://s1.ax1x.com/2023/04/19/p9iR6l4.jpg">
+</p>
+</div>
+</div>
+
+
+# 🐾贡献代码的步骤
+1. 在Gitee上fork项目到自己的repo
+2. 把fork过去的项目也就是你的项目clone到你的本地
+3. 修改代码
+4. commit后push到自己的库
+5. 登录Gitee在你仓库首页可以看到一个 pull request 按钮，点击它，填写一些说明信息，然后提交即可。 等待维护者合并
